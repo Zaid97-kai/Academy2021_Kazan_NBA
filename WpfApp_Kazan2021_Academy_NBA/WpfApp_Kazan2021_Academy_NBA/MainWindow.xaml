@@ -23,7 +23,7 @@
             <Button HorizontalAlignment="Right">Back</Button>
         </Grid>
 
-        
+        <Frame Grid.Row="1" Name="MainFrame"/>
 
         <Grid Grid.Row="2" Background="#6995C2" >
             <Label Name="LblInfo">footer</Label>

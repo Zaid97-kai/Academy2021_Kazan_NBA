@@ -13,3 +13,11 @@ C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\W
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.csproj.CoreCompileInputs.cache
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.exe
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.pdb
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\MainScreenPage.g.cs
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\MatchupListPage.g.cs
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\PlayersMainPage.g.cs
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\VisitorMenuPage.g.cs
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\MainScreenPage.baml
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\MatchupListPage.baml
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\PlayersMainPage.baml
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\Pages\VisitorMenuPage.baml

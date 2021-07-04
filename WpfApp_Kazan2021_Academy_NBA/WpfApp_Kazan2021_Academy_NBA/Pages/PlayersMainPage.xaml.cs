@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp_Kazan2021_Academy_NBA
+namespace WpfApp_Kazan2021_Academy_NBA.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PlayersMainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PlayersMainPage : Page
     {
-        public MainWindow()
+        public PlayersMainPage()
         {
             InitializeComponent();
-
-            MainFrame.Navigate(new Pages.MainScreenPage());
         }
-
     }
 }
