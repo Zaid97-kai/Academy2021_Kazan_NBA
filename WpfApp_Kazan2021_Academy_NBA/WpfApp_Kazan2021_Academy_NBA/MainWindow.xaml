@@ -13,7 +13,7 @@
             <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Margin="10,0">
             <StackPanel HorizontalAlignment="Left" 
                         Orientation="Horizontal">
                 <Image Source="/Resources/logo.jpg" />
@@ -26,7 +26,7 @@
         <Frame Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"/>
 
         <Grid Grid.Row="2" Background="{StaticResource MainBlue}" >
-            <Label Name="LblInfo">footer</Label>
+            <Label Name="LblInfo" Foreground="White" HorizontalAlignment="Center">footer</Label>
         </Grid>
     </Grid>
 </Window>

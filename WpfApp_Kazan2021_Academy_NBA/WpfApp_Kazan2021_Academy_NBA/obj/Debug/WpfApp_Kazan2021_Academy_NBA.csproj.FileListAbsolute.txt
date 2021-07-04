@@ -21,3 +21,4 @@ C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\W
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.csproj.CoreCompileInputs.cache
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.exe
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.pdb
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.csproj.AssemblyReference.cache
