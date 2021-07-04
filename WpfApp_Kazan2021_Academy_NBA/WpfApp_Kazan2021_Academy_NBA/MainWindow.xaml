@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA"
         mc:Ignorable="d"
-        Title="NBA" Height="600" Width="1200" WindowStartupLocation="CenterScreen" MinHeight="400" MinWidth="600">
+        Title="{Binding ElementName=MainFrame, Path=Content.Title}" Height="600" Width="1200" WindowStartupLocation="CenterScreen" MinHeight="400" MinWidth="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>
