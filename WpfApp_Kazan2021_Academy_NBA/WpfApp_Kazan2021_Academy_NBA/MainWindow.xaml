@@ -6,7 +6,52 @@
         xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button></Button>
-    </Grid>
+    <!--<Grid>
+        <Label>TExttexttext: </Label>
+        <TextBox Background="LightSeaGreen" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150"></TextBox>
+        <Button Background="LightGreen" Width="100" Height="50" Click="ButtonClicked">Click me</Button>
+        <Button Name="BtnSecond" Background="LightBlue" Content="Dont' touch me" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="72"></Button>
+    </Grid>-->
+
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="82*"/>
+            <RowDefinition Height="157*"/>
+            <RowDefinition Height="107*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="164*"/>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="154*"/>
+            <ColumnDefinition Width="169*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Background="Red" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2"></Button>
+        
+    </Grid>-->
+
+    <!--<UniformGrid Rows="2" Columns="2">
+        <Button Background="Orange"></Button>
+        <Button Background="Green"></Button>
+    </UniformGrid>-->
+
+    <!--<StackPanel Orientation="Vertical">
+        <Button Background="Blue">hkj</Button>
+        <Button Background="Green">hkj</Button>
+        <Button Background="Orange">hkj</Button>
+    </StackPanel>-->
+
+    <WrapPanel Orientation="Vertical">
+        <Button Width="100" Height="100" Background="Black"></Button>
+        <Button Width="100" Height="100" Background="Black"></Button>
+        <Button Width="100" Height="100" Background="Black"></Button>
+        <Button Width="100" Height="200" Background="Black"></Button>
+        <Button Width="100" Height="100" Background="Black"></Button>
+        <Button Width="300" Height="100" Background="Black"></Button>
+        <Button Width="100" Height="100" Background="Black"></Button>
+        <Button Width="100" Height="100" Background="Black"></Button>
+        <Button Width="100" Height="100" Background="Black"></Button>
+    </WrapPanel>
 </Window>
