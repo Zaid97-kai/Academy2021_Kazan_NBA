@@ -8,7 +8,10 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="VisitorMenuPage">
 
-    <Grid>
-        
-    </Grid>
+    <UniformGrid>
+        <Button x:Name="BtnTeams" Click="BtnTeams_Click">Teams</Button>
+        <Button x:Name="BtnPlayers" Click="BtnPlayers_Click">Players</Button>
+        <Button x:Name="BtnMatchups" Click="BtnMatchups_Click">Matchups</Button>
+        <Button x:Name="BtnPhotos" Click="BtnPhotos_Click">Photos</Button>
+    </UniformGrid>
 </Page>

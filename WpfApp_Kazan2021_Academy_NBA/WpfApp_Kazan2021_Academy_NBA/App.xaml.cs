@@ -13,5 +13,6 @@ namespace WpfApp_Kazan2021_Academy_NBA
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

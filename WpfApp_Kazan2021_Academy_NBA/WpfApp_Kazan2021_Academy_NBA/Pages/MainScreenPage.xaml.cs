@@ -24,5 +24,15 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnVisitor_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new VisitorMenuPage());
+        }
+
+        private void BtnAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This function will be implemented later");
+        }
     }
 }

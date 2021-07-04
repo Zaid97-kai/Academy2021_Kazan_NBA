@@ -6,9 +6,12 @@
       xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainScreenPage" Background="Red">
+      Title="MainScreenPage">
 
     <Grid>
-        <Label>MAIN</Label>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Button Name="BtnVisitor" Click="BtnVisitor_Click">Visitor</Button>
+            <Button Name="BtnAdmin" Click="BtnAdmin_Click">Admin</Button>
+        </StackPanel>
     </Grid>
 </Page>

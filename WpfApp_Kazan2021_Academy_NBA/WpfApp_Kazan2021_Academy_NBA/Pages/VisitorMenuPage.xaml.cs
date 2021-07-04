@@ -24,5 +24,26 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnTeams_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This function will be implemented later");
+        }
+
+        private void BtnPlayers_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PlayersMainPage());
+        }
+
+        private void BtnMatchups_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MatchupListPage());
+        }
+
+
+        private void BtnPhotos_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This function will be implemented later");
+        }
     }
 }
