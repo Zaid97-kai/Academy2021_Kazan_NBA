@@ -27,5 +27,18 @@ namespace WpfApp_Kazan2021_Academy_NBA
             MainFrame.Navigate(new Pages.MainScreenPage());
         }
 
+        private void BackClicked(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+                MainFrame.GoBack();
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+                BtnBack.Visibility = Visibility.Visible;
+            else
+                BtnBack.Visibility = Visibility.Collapsed;
+        }
     }
 }
