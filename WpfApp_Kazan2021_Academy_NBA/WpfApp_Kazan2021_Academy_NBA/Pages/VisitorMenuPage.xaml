@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="VisitorMenuPage">
+      Title="Visitor Menu">
 
     <UniformGrid>
         <Button x:Name="BtnTeams" Click="BtnTeams_Click">Teams</Button>

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainScreenPage">
+      Title="Main Screen">
 
     <Grid>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">

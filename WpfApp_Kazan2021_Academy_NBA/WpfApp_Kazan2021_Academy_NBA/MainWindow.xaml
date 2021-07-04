@@ -19,7 +19,7 @@
                 <Image Source="/Resources/logo.jpg" />
                 <Label Content="NBA Management System"></Label>
             </StackPanel>
-            <Label HorizontalAlignment="Center">HEADER</Label>
+            <Label HorizontalAlignment="Center" Content="{Binding ElementName=MainFrame, Path=Content.Title}"></Label>
             <Button HorizontalAlignment="Right" Click="BackClicked" Name="BtnBack">Back</Button>
         </Grid>
 
