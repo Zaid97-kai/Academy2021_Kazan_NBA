@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="NBA" Height="600" Width="1200" WindowStartupLocation="CenterScreen" MinHeight="400" MinWidth="600">
     <Grid>
-        <StackPanel Orientation="Horizontal">
-            <Label>TExttexttext:</Label>
-            <TextBox Background="LightSeaGreen" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150"></TextBox>
-        </StackPanel>
-
-        <Button Background="LightGreen" Width="100" Height="50" Click="ButtonClicked">Click me</Button>
-        <Button Name="BtnSecond" Background="LightBlue" Content="Dont' touch me" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="72"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        
     </Grid>
 </Window>
