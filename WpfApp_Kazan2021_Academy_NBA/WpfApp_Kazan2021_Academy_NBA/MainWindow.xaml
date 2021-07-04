@@ -12,6 +12,16 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel HorizontalAlignment="Left" 
+                        Orientation="Horizontal">
+                <Image Source="/Resources/logo.jpg" />
+                <Label Content="NBA Management System"></Label>
+            </StackPanel>
+            <Label HorizontalAlignment="Center">HEADER</Label>
+            <Button HorizontalAlignment="Right">Back</Button>
+        </Grid>
         
     </Grid>
 </Window>
