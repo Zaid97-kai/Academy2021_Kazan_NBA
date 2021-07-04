@@ -25,10 +25,10 @@ namespace WpfApp_Kazan2021_Academy_NBA
             InitializeComponent();
         }
 
-        //private void ButtonClicked(object sender, RoutedEventArgs e)
-        //{
-        //    BtnSecond.Content = "Hello, World!!!!!!";
-        //    BtnSecond.Background = Brushes.LightCoral;
-        //}
+        private void ButtonClicked(object sender, RoutedEventArgs e)
+        {
+            BtnSecond.Content = "Hello, World!!!!!!";
+            BtnSecond.Background = Brushes.LightCoral;
+        }
     }
 }
