@@ -5,6 +5,22 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <SolidColorBrush x:Key="MainBlue">#6995C2</SolidColorBrush>
+        <Style TargetType="Button" x:Key="RoundedButton">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"></Setter>
+                </Style>
+            </Style.Resources>
+            <!--<Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}" CornerRadius="5" BorderBrush="DimGray" BorderThickness="1">
+                            <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>-->
+        </Style>
         <Style TargetType="Button">
             <Setter Property="Background" Value="{StaticResource MainBlue}"></Setter>
             <Setter Property="Width" Value="150"></Setter>
@@ -13,11 +29,10 @@
             <Setter Property="Foreground" Value="White"></Setter>
             <Setter Property="Margin" Value="30"></Setter>
         </Style>
-        <Style TargetType="Button" x:Key="GrayButton">
+        <Style TargetType="Button" x:Key="GrayButton" BasedOn="{StaticResource RoundedButton}">
+            <Setter Property="Padding" Value="30,5"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Background" Value="LightGray"></Setter>
-            <Setter Property="Width" Value="100"></Setter>
-            <Setter Property="Height" Value="30"></Setter>
-            <Setter Property="Margin" Value="0"></Setter>
         </Style>
     </Application.Resources>
 </Application>
