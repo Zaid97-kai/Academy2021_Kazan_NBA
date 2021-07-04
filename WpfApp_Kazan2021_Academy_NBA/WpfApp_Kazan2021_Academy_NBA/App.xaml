@@ -43,5 +43,14 @@
         <Style TargetType="Label">
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
         </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="120"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="120"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

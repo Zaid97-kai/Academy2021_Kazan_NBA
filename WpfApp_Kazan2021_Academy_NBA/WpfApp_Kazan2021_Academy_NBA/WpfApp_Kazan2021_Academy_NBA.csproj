@@ -35,9 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,6 +65,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Conference.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Division.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Matchup.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MatchupType.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelNBA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Picture.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerInTeam.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Position.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PostSeason.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Season.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Team.cs">
+      <DependentUpon>ModelNBA.tt</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +136,16 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelNBA.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelNBA.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelNBA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelNBA.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainScreenPage.xaml.cs">
       <DependentUpon>MainScreenPage.xaml</DependentUpon>
     </Compile>
@@ -115,6 +175,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="ModelNBA.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelNBA.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelNBA.edmx.diagram">
+      <DependentUpon>ModelNBA.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +193,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelNBA.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelNBA.Context.cs</LastGenOutput>
+      <DependentUpon>ModelNBA.edmx</DependentUpon>
+    </Content>
+    <Content Include="ModelNBA.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelNBA.edmx</DependentUpon>
+      <LastGenOutput>ModelNBA.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
