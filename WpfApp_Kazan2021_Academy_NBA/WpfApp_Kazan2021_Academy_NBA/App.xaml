@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:WpfApp_Kazan2021_Academy_NBA"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="MainBlue">#6995C2</SolidColorBrush>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource MainBlue}"></Setter>
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="50"></Setter>
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Margin" Value="30"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="GrayButton">
+            <Setter Property="Background" Value="LightGray"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="Margin" Value="0"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

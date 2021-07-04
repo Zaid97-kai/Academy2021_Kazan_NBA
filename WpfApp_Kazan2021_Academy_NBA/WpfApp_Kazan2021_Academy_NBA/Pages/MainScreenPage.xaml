@@ -9,7 +9,7 @@
       Title="Main Screen">
 
     <Grid>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" VerticalAlignment="Center">
             <Button Name="BtnVisitor" Click="BtnVisitor_Click">Visitor</Button>
             <Button Name="BtnAdmin" Click="BtnAdmin_Click">Admin</Button>
         </StackPanel>

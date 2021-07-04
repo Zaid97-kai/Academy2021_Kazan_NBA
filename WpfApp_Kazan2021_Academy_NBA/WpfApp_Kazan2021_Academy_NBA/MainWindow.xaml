@@ -20,12 +20,12 @@
                 <Label Content="NBA Management System"></Label>
             </StackPanel>
             <Label HorizontalAlignment="Center" Content="{Binding ElementName=MainFrame, Path=Content.Title}"></Label>
-            <Button HorizontalAlignment="Right" Click="BackClicked" Name="BtnBack">Back</Button>
+            <Button HorizontalAlignment="Right" Click="BackClicked" Name="BtnBack" Style="{StaticResource GrayButton}">Back</Button>
         </Grid>
 
         <Frame Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"/>
 
-        <Grid Grid.Row="2" Background="#6995C2" >
+        <Grid Grid.Row="2" Background="{StaticResource MainBlue}" >
             <Label Name="LblInfo">footer</Label>
         </Grid>
     </Grid>
