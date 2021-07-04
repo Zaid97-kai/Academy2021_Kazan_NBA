@@ -34,5 +34,14 @@
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Background" Value="LightGray"></Setter>
         </Style>
+
+        <Style TargetType="Label" x:Key="HeaderLabel">
+            <Setter Property="FontSize" Value="22"></Setter>
+            <Setter Property="FontFamily" Value="Calibri"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
