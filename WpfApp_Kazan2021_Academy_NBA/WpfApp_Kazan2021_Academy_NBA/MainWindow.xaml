@@ -22,6 +22,11 @@
             <Label HorizontalAlignment="Center">HEADER</Label>
             <Button HorizontalAlignment="Right">Back</Button>
         </Grid>
+
         
+
+        <Grid Grid.Row="2" Background="#6995C2" >
+            <Label Name="LblInfo">footer</Label>
+        </Grid>
     </Grid>
 </Window>
