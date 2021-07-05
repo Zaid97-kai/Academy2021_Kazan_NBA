@@ -85,6 +85,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelNBA.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PlayerPartial.cs" />
     <Compile Include="Picture.cs">
       <DependentUpon>ModelNBA.tt</DependentUpon>
     </Compile>

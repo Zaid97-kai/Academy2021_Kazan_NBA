@@ -25,7 +25,7 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
             InitializeComponent();
 
             NBAShort_15Entities context = new NBAShort_15Entities();
-            GridPlayers.ItemsSource = context.Players.ToList();
+            GridPlayers.ItemsSource = context.PlayerInTeams.ToList();
         }
     }
 }
