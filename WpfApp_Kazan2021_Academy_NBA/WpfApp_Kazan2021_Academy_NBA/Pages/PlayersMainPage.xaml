@@ -23,7 +23,25 @@
             <Label>Player name:</Label>
             <TextBox Name="TxtPlayerName"></TextBox>
         </StackPanel>
-        <DataGrid Name="GridPlayers" Grid.Row="1"></DataGrid>
+        <DataGrid Name="GridPlayers" Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding }"></Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="No." Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Name" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Team" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Position" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Weight" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Height" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Experience" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Country" Binding="{Binding }"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <Grid Grid.Row="2"></Grid>
     </Grid>
 </Page>

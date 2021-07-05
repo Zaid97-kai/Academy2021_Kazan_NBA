@@ -27,6 +27,9 @@ namespace WpfApp_Kazan2021_Academy_NBA
             MainFrame.Navigate(new Pages.MainScreenPage());
         }
 
+        /// <summary>
+        /// Обработка нажатия кнопки Назад.
+        /// </summary>
         private void BackClicked(object sender, RoutedEventArgs e)
         {
             if (MainFrame.CanGoBack)
@@ -38,7 +41,19 @@ namespace WpfApp_Kazan2021_Academy_NBA
             if (MainFrame.CanGoBack)
                 BtnBack.Visibility = Visibility.Visible;
             else
+                // Убираем кнопку из верстки.
                 BtnBack.Visibility = Visibility.Collapsed;
+        }
+
+        /// <summary>
+        /// Сложение двух целых чисел.
+        /// </summary>
+        /// <param name="a">Первое число</param>
+        /// <param name="b">Второе число</param>
+        /// <returns>Сумма</returns>
+        private int SumInt(int a, int b)
+        {
+            return a + b;
         }
     }
 }

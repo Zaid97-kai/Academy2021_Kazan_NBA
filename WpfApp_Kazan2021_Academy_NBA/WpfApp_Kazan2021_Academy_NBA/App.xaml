@@ -44,6 +44,7 @@
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
         </Style>
 
+        <!--Стиль для базового элемента-->
         <Style TargetType="Control" x:Key="BaseControl">
             <Setter Property="Width" Value="120"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
