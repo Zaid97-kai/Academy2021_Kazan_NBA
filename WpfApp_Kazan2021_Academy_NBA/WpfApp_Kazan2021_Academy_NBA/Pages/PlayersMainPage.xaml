@@ -42,6 +42,19 @@
                 <DataGridTextColumn Header="Country" Binding="{Binding Player.Country.CountryName}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Grid Grid.Row="2"></Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style TargetType="Button" BasedOn="{StaticResource PaginationButton}"></Style>
+                </StackPanel.Resources>
+                <Button Click="GoToFirstPage" Content="&lt;&lt;"></Button>
+                <Button Click="GoToPreviousPage" Content="&lt;"></Button>
+                <TextBox Name="TxtCurrentPage" Width="50"></TextBox>
+                <Label Name="LblTotalPages">of 7</Label>
+                <Button Click="GoToNextPage" Content="&gt;"></Button>
+                <Button Click="GoToLastPage" Content="&gt;&gt;"></Button>
+            </StackPanel>
+            <Label Name="LblSummaryInfo" HorizontalAlignment="Center" FontStyle="Italic" FontWeight="Bold"></Label>
+        </Grid>
     </Grid>
 </Page>

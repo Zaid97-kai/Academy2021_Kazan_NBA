@@ -65,5 +65,25 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
         {
             RefreshPlayers();
         }
+
+        private void GoToFirstPage(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GoToPreviousPage(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GoToNextPage(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GoToLastPage(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

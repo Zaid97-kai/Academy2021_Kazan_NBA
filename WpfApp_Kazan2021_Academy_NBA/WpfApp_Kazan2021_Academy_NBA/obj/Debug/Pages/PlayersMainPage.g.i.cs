@@ -72,6 +72,30 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages {
         #line default
         #line hidden
         
+        
+        #line 52 "..\..\..\Pages\PlayersMainPage.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox TxtCurrentPage;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 53 "..\..\..\Pages\PlayersMainPage.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label LblTotalPages;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 57 "..\..\..\Pages\PlayersMainPage.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label LblSummaryInfo;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -131,6 +155,15 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages {
             return;
             case 4:
             this.GridPlayers = ((System.Windows.Controls.DataGrid)(target));
+            return;
+            case 5:
+            this.TxtCurrentPage = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 6:
+            this.LblTotalPages = ((System.Windows.Controls.Label)(target));
+            return;
+            case 7:
+            this.LblSummaryInfo = ((System.Windows.Controls.Label)(target));
             return;
             }
             this._contentLoaded = true;
