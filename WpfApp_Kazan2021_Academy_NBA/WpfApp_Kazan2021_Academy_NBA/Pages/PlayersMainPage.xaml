@@ -17,13 +17,13 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource MainBlue}">
             <Label>Season:</Label>
-            <ComboBox Name="CmbSeasons" DisplayMemberPath="Name"></ComboBox>
+            <ComboBox Name="CmbSeasons" DisplayMemberPath="Name" SelectionChanged="UpdatePlayersDataGrid"></ComboBox>
             <Label>Team:</Label>
-            <ComboBox Name="CmbTeams" DisplayMemberPath="TeamName"></ComboBox>
+            <ComboBox Name="CmbTeams" DisplayMemberPath="TeamName" SelectionChanged="UpdatePlayersDataGrid"></ComboBox>
             <Label>Player name:</Label>
-            <TextBox Name="TxtPlayerName"></TextBox>
+            <TextBox Name="TxtPlayerName" TextChanged="TxtPlayerName_TextChanged"></TextBox>
         </StackPanel>
-        <DataGrid Name="GridPlayers" Grid.Row="1" AutoGenerateColumns="False" ColumnWidth="*">
+        <DataGrid Name="GridPlayers" Grid.Row="1" AutoGenerateColumns="False" ColumnWidth="*" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>

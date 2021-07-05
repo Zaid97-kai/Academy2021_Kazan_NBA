@@ -20,15 +20,48 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
     /// </summary>
     public partial class PlayersMainPage : Page
     {
+        private NBAShort_15Entities _context;
+
         public PlayersMainPage()
         {
             InitializeComponent();
 
-            NBAShort_15Entities context = new NBAShort_15Entities();
-            GridPlayers.ItemsSource = context.PlayerInTeams.ToList();
+            _context = new NBAShort_15Entities();
+            //GridPlayers.ItemsSource = context.PlayerInTeams.ToList();
 
-            CmbSeasons.ItemsSource = context.Seasons.ToList();
-            CmbTeams.ItemsSource = context.Teams.ToList();
+            CmbSeasons.ItemsSource = _context.Seasons.ToList();
+            CmbTeams.ItemsSource = _context.Teams.ToList();
+            CmbSeasons.SelectedIndex = 0;
+            CmbTeams.SelectedIndex = 0;
+
+            RefreshPlayers();
+        }
+
+        private void UpdatePlayersDataGrid(object sender, SelectionChangedEventArgs e)
+        {
+            RefreshPlayers();
+        }
+
+        private void RefreshPlayers()
+        {
+            Team selectedTeam = CmbTeams.SelectedItem as Team;
+            Season selectedSeason = CmbSeasons.SelectedItem as Season;
+            string searchText = TxtPlayerName.Text;
+
+            List<PlayerInTeam> listPlayers = _context.PlayerInTeams.ToList();
+            listPlayers = listPlayers.Where(player => player.Season == selectedSeason).ToList();
+            listPlayers = listPlayers.Where(player => player.Team == selectedTeam).ToList();
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                listPlayers = listPlayers.Where(player => player.Player.Name.ToLower().Contains(searchText.ToLower())).ToList();
+            }
+
+            GridPlayers.ItemsSource = listPlayers;
+        }
+
+        private void TxtPlayerName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            RefreshPlayers();
         }
     }
 }
