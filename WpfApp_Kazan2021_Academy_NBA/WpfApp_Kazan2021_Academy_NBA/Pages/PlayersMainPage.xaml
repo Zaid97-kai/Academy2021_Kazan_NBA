@@ -17,9 +17,9 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource MainBlue}">
             <Label>Season:</Label>
-            <ComboBox Name="CmbSeasons"></ComboBox>
+            <ComboBox Name="CmbSeasons" DisplayMemberPath="Name"></ComboBox>
             <Label>Team:</Label>
-            <ComboBox Name="CmbTeams"></ComboBox>
+            <ComboBox Name="CmbTeams" DisplayMemberPath="TeamName"></ComboBox>
             <Label>Player name:</Label>
             <TextBox Name="TxtPlayerName"></TextBox>
         </StackPanel>
