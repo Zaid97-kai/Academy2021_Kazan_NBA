@@ -29,8 +29,8 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
             _context = new NBAShort_15Entities();
             //GridPlayers.ItemsSource = context.PlayerInTeams.ToList();
 
-            CmbSeasons.ItemsSource = _context.Seasons.ToList();
-            CmbTeams.ItemsSource = _context.Teams.ToList();
+            CmbSeasons.ItemsSource = _context.Seasons.OrderByDescending(season=>season.Name).ToList();
+            CmbTeams.ItemsSource = _context.Teams.OrderBy(team=>team.TeamName).ToList();
             CmbSeasons.SelectedIndex = 0;
             CmbTeams.SelectedIndex = 0;
 
@@ -55,6 +55,8 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
             {
                 listPlayers = listPlayers.Where(player => player.Player.Name.ToLower().Contains(searchText.ToLower())).ToList();
             }
+
+            listPlayers = listPlayers.OrderBy(x => x.ShirtNumber).ToList();
 
             GridPlayers.ItemsSource = listPlayers;
         }
