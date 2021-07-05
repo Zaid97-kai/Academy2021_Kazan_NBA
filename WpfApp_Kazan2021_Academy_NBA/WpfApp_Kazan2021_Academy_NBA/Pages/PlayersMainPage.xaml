@@ -50,7 +50,7 @@
                 <Button Click="GoToFirstPage" Content="&lt;&lt;"></Button>
                 <Button Click="GoToPreviousPage" Content="&lt;"></Button>
                 <TextBox Name="TxtCurrentPage" Width="50"></TextBox>
-                <Label Name="LblTotalPages">of 7</Label>
+                <Label Name="LblTotalPages">of N</Label>
                 <Button Click="GoToNextPage" Content="&gt;"></Button>
                 <Button Click="GoToLastPage" Content="&gt;&gt;"></Button>
             </StackPanel>

@@ -21,6 +21,9 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
     public partial class PlayersMainPage : Page
     {
         private NBAShort_15Entities _context;
+        private int _currentPage = 1;
+        private int _countPlayers = 5;
+        private int _maxPages;
 
         public PlayersMainPage()
         {
@@ -29,8 +32,8 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
             _context = new NBAShort_15Entities();
             //GridPlayers.ItemsSource = context.PlayerInTeams.ToList();
 
-            CmbSeasons.ItemsSource = _context.Seasons.OrderByDescending(season=>season.Name).ToList();
-            CmbTeams.ItemsSource = _context.Teams.OrderBy(team=>team.TeamName).ToList();
+            CmbSeasons.ItemsSource = _context.Seasons.OrderByDescending(season => season.Name).ToList();
+            CmbTeams.ItemsSource = _context.Teams.OrderBy(team => team.TeamName).ToList();
             CmbSeasons.SelectedIndex = 0;
             CmbTeams.SelectedIndex = 0;
 
@@ -58,7 +61,16 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
 
             listPlayers = listPlayers.OrderBy(x => x.ShirtNumber).ToList();
 
-            GridPlayers.ItemsSource = listPlayers;
+            _maxPages = (int)Math.Ceiling(listPlayers.Count * 1.0 / _countPlayers);
+
+            var listPlayersInPage = listPlayers.Skip((_currentPage - 1) * _countPlayers).Take(_countPlayers).ToList();
+            //listPlayers = listPlayers.GetRange((_currentPage - 1) * _countPlayers, _countPlayers);
+
+            TxtCurrentPage.Text = _currentPage.ToString();
+            LblTotalPages.Content = "of " + _maxPages;
+            LblSummaryInfo.Content = $"Total {listPlayers.Count} records, {_countPlayers} records in one page";
+
+            GridPlayers.ItemsSource = listPlayersInPage;
         }
 
         private void TxtPlayerName_TextChanged(object sender, TextChangedEventArgs e)
@@ -68,22 +80,26 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
 
         private void GoToFirstPage(object sender, RoutedEventArgs e)
         {
-
+            _currentPage = 1;
+            RefreshPlayers();
         }
 
         private void GoToPreviousPage(object sender, RoutedEventArgs e)
         {
-
+            _currentPage--;
+            RefreshPlayers();
         }
 
         private void GoToNextPage(object sender, RoutedEventArgs e)
         {
-
+            _currentPage++;
+            RefreshPlayers();
         }
 
         private void GoToLastPage(object sender, RoutedEventArgs e)
         {
-
+            _currentPage = _maxPages;
+            RefreshPlayers();
         }
     }
 }
