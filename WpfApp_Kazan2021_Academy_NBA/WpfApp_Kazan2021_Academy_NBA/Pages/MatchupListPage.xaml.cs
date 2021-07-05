@@ -23,6 +23,14 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
         public MatchupListPage()
         {
             InitializeComponent();
+
+            NBAShort_15Entities context = new NBAShort_15Entities();
+            ListMatchups.ItemsSource = context.Matchups.ToList();
+        }
+
+        private void ShowSelectedMatchup(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

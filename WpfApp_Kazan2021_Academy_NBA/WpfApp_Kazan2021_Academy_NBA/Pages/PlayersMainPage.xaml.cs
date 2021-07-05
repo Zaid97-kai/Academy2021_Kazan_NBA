@@ -64,7 +64,7 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
             _maxPages = (int)Math.Ceiling(listPlayers.Count * 1.0 / _countPlayers);
 
             var listPlayersInPage = listPlayers.Skip((_currentPage - 1) * _countPlayers).Take(_countPlayers).ToList();
-            //listPlayers = listPlayers.GetRange((_currentPage - 1) * _countPlayers, _countPlayers);
+            //var listPlayersInPage = listPlayers.GetRange((_currentPage - 1) * _countPlayers, _countPlayers);
 
             TxtCurrentPage.Text = _currentPage.ToString();
             LblTotalPages.Content = "of " + _maxPages;

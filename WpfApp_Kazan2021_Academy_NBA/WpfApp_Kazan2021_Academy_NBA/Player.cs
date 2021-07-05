@@ -32,9 +32,7 @@ namespace WpfApp_Kazan2021_Academy_NBA
         public byte[] Img { get; set; }
         public bool IsRetirment { get; set; }
         public Nullable<System.DateTime> RetirmentTime { get; set; }
-
-
-
+    
         public virtual Country Country { get; set; }
         public virtual Position Position { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
