@@ -11,7 +11,8 @@ namespace WpfApp_Kazan2021_Academy_NBA
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Windows.Media;
+
     public partial class Matchup
     {
         public int MatchupId { get; set; }
@@ -25,7 +26,43 @@ namespace WpfApp_Kazan2021_Academy_NBA
         public string Location { get; set; }
         public int Status { get; set; }
         public string CurrentQuarter { get; set; }
-    
+
+        public string StatusString
+        {
+            get
+            {
+                switch (Status)
+                {
+                    case -1:
+                        return "Not Start";
+                    case 0:
+                        return "Running";
+                    case 1:
+                        return "Finished";
+                    default:
+                        return "?????";
+                }
+            }
+        }
+
+        public SolidColorBrush StatusColor
+        {
+            get
+            {
+                switch (Status)
+                {
+                    case -1:
+                        return Brushes.LightBlue;
+                    case 0:
+                        return Brushes.Red;
+                    case 1:
+                        return Brushes.Gray;
+                    default:
+                        return Brushes.Green;
+                }
+            }
+        }
+
         public virtual Season Season { get; set; }
         public virtual MatchupType MatchupType { get; set; }
         public virtual Team TeamAway { get; set; }

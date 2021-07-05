@@ -30,7 +30,8 @@ namespace WpfApp_Kazan2021_Academy_NBA.Pages
 
         private void ShowSelectedMatchup(object sender, RoutedEventArgs e)
         {
-
+            Matchup selectedMatchup = (sender as Button).DataContext as Matchup;
+            GridSelectedMatchup.DataContext = selectedMatchup;
         }
     }
 }

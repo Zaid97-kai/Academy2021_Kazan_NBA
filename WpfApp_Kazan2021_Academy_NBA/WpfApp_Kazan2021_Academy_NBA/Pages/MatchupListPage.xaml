@@ -14,27 +14,27 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Name="GridSelectedMatchup">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <StackPanel Orientation="Horizontal" Grid.Column="0">
-                <Image Width="70" Height="70" Source="{Binding }"></Image>
-                <StackPanel>
-                    <Label Content="{Binding }"></Label>
+            <StackPanel Orientation="Horizontal" Grid.Column="0" HorizontalAlignment="Right">
+                <Image VerticalAlignment="Center" Width="70" Height="70" Source="{Binding TeamAway.Logo}"></Image>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="{Binding TeamAway.TeamName}"></Label>
                     <Label>(Away)</Label>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Grid.Column="1">
+            <StackPanel Margin="30,0" Orientation="Vertical" Grid.Column="1">
                 <Label FontSize="40">VS</Label>
-                <Label Content="{Binding }"></Label>
+                <TextBlock Text="{Binding Starttime, StringFormat={}{0:HH:mm 'Start'}}"></TextBlock>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Column="2">
-                <Image Width="70" Height="70" Source="{Binding }"></Image>
-                <StackPanel>
-                    <Label Content="{Binding }"></Label>
+                <Image VerticalAlignment="Center" Width="70" Height="70" Source="{Binding TeamHome.Logo}"></Image>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="{Binding TeamHome.TeamName}"></Label>
                     <Label>(Home)</Label>
                 </StackPanel>
             </StackPanel>
@@ -43,40 +43,49 @@
         <ListView Grid.Row="1" Name="ListMatchups" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel></WrapPanel>
+                    <WrapPanel HorizontalAlignment="Center"></WrapPanel>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
+                    <Border Padding="5" CornerRadius="5" BorderThickness="1" BorderBrush="Gray">
+                        <Grid Width="300" Height="160">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                            </Grid.RowDefinitions>
 
-                        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="0">
-                            <Image Width="40" Height="40" Source="{Binding TeamAway.Logo}"></Image>
-                            <Label Content="{Binding TeamAway.TeamName}"></Label>
-                        </StackPanel>
-                        <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="0">
-                            <Image Width="40" Height="40" Source="{Binding TeamHome.Logo}"></Image>
-                            <Label Content="{Binding TeamHome.TeamName}"></Label>
-                        </StackPanel>
-                        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1">
-                            <Label Content="{Binding }" Background="{Binding }" Width="80"></Label>
-                            <Label Content="{Binding Starttime}"></Label>
-                            <Label Content="{Binding Team_Away_Score}"></Label>
-                        </StackPanel>
-                        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="3">
-                            <Label Content="{Binding Location}"></Label>
-                            <Button Content="View" Click="ShowSelectedMatchup" Style="{StaticResource GrayButton}"></Button>
-                        </StackPanel>
-                    </Grid>
+                            <StackPanel VerticalAlignment="Bottom" Orientation="Vertical" Grid.Column="0" Grid.Row="0">
+                                <Image Width="40" Height="40" Source="{Binding TeamAway.Logo}"></Image>
+                                <TextBlock Text="{Binding TeamAway.TeamName}" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Orientation="Vertical" Grid.Column="2" Grid.Row="0">
+                                <Image Width="40" Height="40" Source="{Binding TeamHome.Logo}"></Image>
+                                <TextBlock Text="{Binding TeamHome.TeamName}" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+                                <Label Foreground="White" Content="{Binding StatusString}" Background="{Binding StatusColor}" Width="80" HorizontalContentAlignment="Center"></Label>
+                                <TextBlock Text="{Binding Starttime, StringFormat={}{0:MM/dd HH:mm}}" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock HorizontalAlignment="Center">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}{0}-{1}">
+                                            <Binding Path="Team_Away_Score"></Binding>
+                                            <Binding Path="Team_Home_Score"></Binding>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
+                                <Label Content="{Binding Location}" HorizontalAlignment="Center"></Label>
+                                <Button Content="View" Click="ShowSelectedMatchup" Style="{StaticResource GrayButton}" HorizontalAlignment="Center"></Button>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
