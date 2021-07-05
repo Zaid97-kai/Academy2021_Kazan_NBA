@@ -22,3 +22,10 @@ C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\W
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.exe
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.pdb
 C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.csproj.AssemblyReference.cache
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\bin\Debug\EntityFramework.dll
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\bin\Debug\EntityFramework.xml
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA_Content.g.cs
+C:\Users\User1\source\repos\Academy2021_Kazan_NBA\WpfApp_Kazan2021_Academy_NBA\WpfApp_Kazan2021_Academy_NBA\obj\Debug\WpfApp_Kazan2021_Academy_NBA.csproj.CopyComplete

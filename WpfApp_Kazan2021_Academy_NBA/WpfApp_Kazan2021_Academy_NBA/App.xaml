@@ -44,13 +44,13 @@
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
         </Style>
 
-        <Style TargetType="ComboBox">
+        <Style TargetType="Control" x:Key="BaseControl">
             <Setter Property="Width" Value="120"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
         </Style>
-        <Style TargetType="TextBox">
-            <Setter Property="Width" Value="120"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        <Style TargetType="ComboBox" BasedOn="{StaticResource BaseControl}">
+        </Style>
+        <Style TargetType="TextBox" BasedOn="{StaticResource BaseControl}">
         </Style>
     </Application.Resources>
 </Application>
